@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Futbol Chapas</title>
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Estilo.css" media="screen" />
+
+    <style>
+        .divN {
+            float: left;
+            width: 120px;
+            height: 134px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            console.log("Dejado" + document.getElementById(data));
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            console.log("Dejado");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Menu">
+    <ul class="menu">
+        <li><a href="../../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy"></a></li>
+        <li><a href="../Tienda.html">Tienda</a></li>
+        <li><a href="../Liga.html">La Liga</a></li>
+        <ul>
+            <li><a href="../../Documento/Reglamento.pdf">Normativa.</a></li>
+        </ul>
+        <li><a href="../Equipos.html">Equipos</a></li>
+        <!-- Desplegable con todos los equipos -->
+        <ul>
+            <li><a href="E_AchoPijo.html">Acho Pijo</a></li>
+            <li><a href="E_Alados.html">Alados</a></li>
+            <li><a href="E_Alcorcon.html">Alcorcon FC</a></li>
+            <li><a href="E_Belloteros.html">Belloteros</a></li>
+            <li><a href="E_Betis.html">Betis</a></li>
+            <li><a href="E_Castilla.html">Castilla</a></li>
+            <li><a href="E_Fontaneses.html">Los Fontaneses</a></li>
+            <li><a href="E_Leones.html">Leones</a></li>
+            <li><a href="E_Lobos.html">Lobos FC</a></li>
+            <li><a href="E_Romanos.html">Romanos</a></li>
+            <li><a href="E_Sevilla.html">Sevilla FC</a></li>
+            <li><a href="E_Toros.html">Toros FC</a></li>
+        </ul>
+        <li><a href="../Multimedia.html">Multimedia</a></li>
+        <li><a href="../Contacto.html">Contacto</a></li>
+        <li><img data-retina="50" data-height="50" alt="imagen de carrito de la compra." src="../../img/carrito.png" loading="lazy"></li>
+        <li><img data-retina="50" data-height="50" alt="imagen de usuario." src="../../img/usuario.png" loading="lazy"></li>
+    </ul>
+    <!--Faltarian el carrito para añadir las cosas y para poder llegas a hacer un login-->
+</div>
+
+    <div id="Info_Equipo">
+
+        <!-- Mostraremos los productos con el siguiente formato
+        __________________________________________________
+        |      |                 | Clasificación | Puntos |
+        | Foto | Info del equipo |       P       |   Nº   |
+        |______|_________________|_______________|________|
+        -->
+        <h1>ROMANOS</h1>
+        <img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy">
+        <table border="1" width="90%">
+            <tr>
+                <td width="55%">
+                    <table>
+                        <tr>
+                            <td><b>Nombre del equipo:</b></td>
+                            <td>Acho Pijo.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Base:</b></td>
+                            <td>Murcia, Murcia, España.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Presidente:</b></td>
+                            <td>Rosa María Roncero Les</td>
+                        </tr>
+                        <tr>
+                            <td><b>Entrenador:</b></td>
+                            <td>Laura Blanco del campo</td>
+                        </tr>
+                        <tr>
+                            <td><b>Liga de debut:</b></td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td><b>Campeonatos de liga:</b></td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td width="10%">
+                    <p><b>PUESTO</b>
+                    <br>
+                    12º</p>
+                </td>
+
+                <td width="10%">
+                    <p><b>PUNTOS</b>
+                    <br>
+                    0</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="E_mienbros">
+        <h3>JUGADORES</h3>
+        <abbr title="Raúl Gutiérrez Prieto"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Sergio Vidal Bravo"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Nicolás Moya Pascual"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Fernando Morales Ortega"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Esteban Delgado Guerra"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Ángel Santana Cordero"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Carlos Romero Márquez"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Arturo Vega León"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Juan Castro Cruz"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Víctor Carmona Rivas"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Enrique Carrasco Herrera"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+        <abbr title="Rafael Flores Gallego"><img data-retina="50" data-height="50" alt="Logo del equipo Acho Pijo de la ciudad de Murcia" src="../../img/E_AchoPijo.png" loading="lazy"></abbr>
+    </div>
+
+    <div id="alineacion">
+        <h2>Alineación.</h2>
+        <img data-retina="50" data-height="50" alt="imagen decampo de futbol" src="../../img/Campo_futbol.png" loading="lazy">
+
+        <div id="div1" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div3" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div5" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div6" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div7" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div8" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div9" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div10" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div11" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h3>Jugadores</h3>
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag1">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag2">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag3">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag4">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag5">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag6">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag7">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag8">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag9">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag10">
+        <img src="../../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag11">
+    </div>
+
+    <div id="E_Contacto">
+        <p>
+            <h3>CONTACTO.</h3>
+            <b>Telefono:</b> 924517863
+            <br>
+            <b>Email:</b> AchoPijo@ligaespañolafutbolchapas.es
+            <br>
+            <b>X</b>
+            <br>
+            <b>Intagram</b>
+            <br>
+            <b>Sede:</b> Calle Fernando Múgica Herzog, 3, 30010 Murcia, Murcia, España.
+            <div id="map" style="width:100%;height:600px"></div>
+        </p>
+        <script>
+            function Map123() {
+                var mapOptions = {
+                    center:new google.maps.LatLng(37.972947, -1.127446),
+                    zoom: 20,
+                    mapTypeId: 'satellite'
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123">
+        </script>
+    </div>
+
+    <footer id="MapaWeb">
+        <table border="0" width="100%">
+            <tr>
+                <td width="20%">
+                    <a href="../../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy"></a></li>
+                </td>
+
+                <td width="20%">
+                    <a href="../Liga.html"><b>La Liga</b></a>
+                    <ul>
+                        <li><a href="../../Documento/Reglamento.pdf">Documentación</a></li>
+                    </ul>
+                </td>
+
+                <td width="20%">
+                    <a href="../Equipos.html"><b>Equipos</b></a>
+                    <ul>
+                        <li><a href="E_AchoPijo.html">Acho Pijo</a></li>
+                        <li><a href="E_Alados.html">Alados</a></li>
+                        <li><a href="E_Alcorcon.html">Alcorcon FC</a></li>
+                        <li><a href="E_Belloteros.html">Belloteros</a></li>
+                        <li><a href="E_Betis.html">Betis</a></li>
+                        <li><a href="E_Castilla.html">Castilla</a></li>
+                        <li><a href="E_Fontaneses.html">Los Fontaneses</a></li>
+                        <li><a href="E_Leones.html">Leones</a></li>
+                        <li><a href="E_Lobos.html">Lobos FC</a></li>
+                        <li><a href="E_Romanos.html">Romanos</a></li>
+                        <li><a href="E_Sevilla.html">Sevilla FC</a></li>
+                        <li><a href="E_Toros.html">Toros FC</a></li>
+                    </ul>
+                </td>
+
+                <td width="20%">
+                    <a href="../Tienda.html"><b>Tienda</b></a>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="../Multimedia.html"><b>Multimedia</b></a>
+                </td>
+
+                <td width="20%">
+                    <a href="../Contacto.html"><b>Contacto</b></a>
+                    <li><b>Telefono:</b>924876531</li>
+                    <li><b>Email:</b>info@futbolChapas.es</li>
+                    <li><b>Dirección:</b>Plaza de la Florida, 20, 28008 Madrid, España</li>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>

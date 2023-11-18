@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Futbol Chapas</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css" media="screen" />
+    <style>
+        .divN {
+            float: left;
+            width: 120px;
+            height: 134px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            console.log("Dejado" + document.getElementById(data));
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            console.log("Dejado");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="Menu">
+        <ul class="menu">
+            <li><a href="../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy"></a></li>
+            <li><a href="Tienda.html">Tienda</a></li>
+            <li><a href="Liga.html">La Liga</a></li>
+            <ul>
+                <li><a href="../Documento/Reglamento.pdf">Normativa.</a></li>
+            </ul>
+            <li><a href="Equipos.html">Equipos</a></li>
+            <!-- Desplegable con todos los equipos -->
+            <ul>
+                <li><a href="Equipos/E_AchoPijo.html">Acho Pijo</a></li>
+                <li><a href="Equipos/E_Alados.html">Alados</a></li>
+                <li><a href="Equipos/E_Alcorcon.html">Alcorcon FC</a></li>
+                <li><a href="Equipos/E_Belloteros.html">Belloteros</a></li>
+                <li><a href="Equipos/E_Betis.html">Betis</a></li>
+                <li><a href="Equipos/E_Castilla.html">Castilla</a></li>
+                <li><a href="Equipos/E_Fontaneses.html">Los Fontaneses</a></li>
+                <li><a href="Equipos/E_Leones.html">Leones</a></li>
+                <li><a href="Equipos/E_Lobos.html">Lobos FC</a></li>
+                <li><a href="Equipos/E_Romanos.html">Romanos</a></li>
+                <li><a href="Equipos/E_Sevilla.html">Sevilla FC</a></li>
+                <li><a href="Equipos/E_Toros.html">Toros FC</a></li>
+            </ul>
+            <li><a href="Multimedia.html">Multimedia</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><img data-retina="50" data-height="50" alt="imagen de carrito de la compra." src="../img/carrito.png" loading="lazy"></li>
+            <li><img data-retina="50" data-height="50" alt="imagen de usuario." src="../img/usuario.png" loading="lazy"></li>
+        </ul>
+    </header>
+
+    <div id="Clasi_Liga">
+        <h2>TABLA DE CLASIFICACIÓN DE LA LIGA</h2>
+        <table>
+            <tr>
+                <th><abbr title="Posición">Posición</abbr></th>
+                <th><abbr title="Equipo">Equipo</abbr></th>
+                <th><abbr title="Puntos">Puntos</abbr></th>
+                <th><abbr title="Partidos jugados">PJ</abbr></th>
+                <th><abbr title="Partidos ganados">PG</abbr></th>
+                <th><abbr title="Partidos empatados">PE</abbr></th>
+                <th><abbr title="Partidos perdidos">PP</abbr></th>
+                <th><abbr title="Goles a favor">GF</abbr></th>
+                <th><abbr title="Goles en contra">GC</abbr></th>
+                <th><abbr title="Diferencia de goles">DG</abbr></th>
+
+            </tr>
+            <tr>
+                <td>1º</td>
+                <td>Los Fontaneses.</td>
+                <td>22</td>
+                <td>8</td>
+                <td>7</td>
+                <td>1</td>
+                <td>0</td>
+                <td>30</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Romanos.</td>
+                <td>21</td>
+                <td>8</td>
+                <td>7</td>
+                <td>0</td>
+                <td>1</td>
+                <td>23</td>
+                <td>15</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Alados.</td>
+                <td>8</td>
+                <td>6</td>
+                <td>1</td>
+                <td>1</td>
+                <td>19</td>
+                <td>26</td>
+                <td>16</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>Belloteros.</td>
+                <td>18</td>
+                <td>8</td>
+                <td>6</td>
+                <td>0</td>
+                <td>2</td>
+                <td>20</td>
+                <td>12</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>Toros FC</td>
+                <td>17</td>
+                <td>8</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+                <td>10</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Betis</td>
+                <td>16</td>
+                <td>8</td>
+                <td>5</td>
+                <td>1</td>
+                <td>2</td>
+                <td>12</td>
+                <td>11</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td>Castilla</td>
+                <td>15</td>
+                <td>8</td>
+                <td>5</td>
+                <td>0</td>
+                <td>3</td>
+                <td>15</td>
+                <td>16</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Leones</td>
+                <td>14</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>15</td>
+                <td>19</td>
+                <td>-4</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td>Lobos FC</td>
+                <td>13</td>
+                <td>8</td>
+                <td>4</td>
+                <td>1</td>
+                <td>3</td>
+                <td>15</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sevilla FC</td>
+                <td>12</td>
+                <td>8</td>
+                <td>4</td>
+                <td>0</td>
+                <td>4</td>
+                <td>10</td>
+                <td>15</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>11º</td>
+                <td>Alcorcon FC</td>
+                <td>6</td>
+                <td>8</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>12</td>
+                <td>28</td>
+                <td>-16</td>
+            </tr>
+            <tr>
+                <td>12º</td>
+                <td>Acho Pijo.</td>
+                <td>0</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>5</td>
+                <td>15</td>
+                <td>-10</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Clasi_Jugadores">
+        <h2>TOP 10 JUGADORES DE LA LIGA</h2>
+        <table>
+            <tr>
+                <th><abbr title="Posición">Posición</abbr></th>
+                <th><abbr title="Nombre del jugadore">Nombre Jugador</abbr></th>
+                <th><abbr title="Equipo">Equipo</abbr></th>
+                <th><abbr title="Número de goles">Goles</abbr></th>
+
+            </tr>
+            <tr>
+                <td>1º</td>
+                <td>Emilio Naranjo Reina</td>
+                <td>Los Fontaneses.</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Mateo González Ramos</td>
+                <td>Romanos.</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Jorge Molina Cárdenas</td>
+                <td>Los Fontaneses.</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Matías Lara Cervantes</td>
+                <td>Los Fontaneses.</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Víctor Carmona Rivas</td>
+                <td>Acho Pijo.</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Joaquín Marín Collado</td>
+                <td>Belloteros.</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Alejandro Rodríguez Jiménez</td>
+                <td>Romanos</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Antonio Ruiz Castro</td>
+                <td>Romanos.</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Simón Meléndez Peralta</td>
+                <td>Los fontaneses.</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td>Pablo Soto Ibañez</td>
+                <td>Belloteros.</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Info_Doc">
+        <h2>
+            <a href="../Documento/Reglamento.pdf">REGLAMENTO</a>
+        </h2>
+    </div>
+
+    <div id="Liga_Juego">
+        <h2>¿Cómo acabara la liga?</h2>
+        <p><i>Haz tu porra aqui.</i></p>
+        <h4>1º</h4>
+        <div id="div1" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>2º</h4>
+        <div id="div2" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>3º</h4>
+        <div id="div3" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>4º</h4>
+        <div id="div4" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>5º</h4>
+        <div id="div5" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>6º</h4>
+        <div id="div6" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>7º</h4>
+        <div id="div7" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>8º</h4>
+        <div id="div8" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>9º</h4>
+        <div id="div9" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>10º</h4>
+        <div id="div10" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>11º</h4>
+        <div id="div11" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h4>12º</h4>
+        <div id="div12" class="divN" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <h3>Equipos</h3>
+        <img src="../img/E_AchoPijo.png" draggable="true" ondragstart="drag(event)" id="drag1">
+        <img src="../img/E_Santander.png" draggable="true" ondragstart="drag(event)" id="drag2">
+        <img src="../img/E_Alcorcon.png" draggable="true" ondragstart="drag(event)" id="drag3">
+        <img src="../img/E_Belloteros.png" draggable="true" ondragstart="drag(event)" id="drag4">
+        <img src="../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag5">
+        <img src="../img/E_Castilla.png" draggable="true" ondragstart="drag(event)" id="drag6">
+        <img src="../img/E_LosFontaneses.png" draggable="true" ondragstart="drag(event)" id="drag7">
+        <img src="../img/E_Leones.png" draggable="true" ondragstart="drag(event)" id="drag8">
+        <img src="../img/E_Lobos.png" draggable="true" ondragstart="drag(event)" id="drag9">
+        <img src="../img/E_Romanos.png" draggable="true" ondragstart="drag(event)" id="drag10">
+        <img src="../img/E_Sevilla.png" draggable="true" ondragstart="drag(event)" id="drag11">
+        <img src="../img/E_Toros.png" draggable="true" ondragstart="drag(event)" id="drag12">
+    </div>
+
+    <footer id="MapaWeb">
+        <div>
+            <a href="../Index.html">
+                <img alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy">
+            </a>
+        </div>
+
+        <div>
+            <a href="Liga.html"><b>La Liga</b></a>
+            <ul>
+                <li><a href="../Documento/Reglamento.pdf">Documentación</a></li>
+            </ul>
+            <a href="Tienda.html"><b>Tienda</b></a>
+            <br>
+            <br>
+            <a href="Multimedia.html"><b>Multimedia</b></a>
+        </div>
+
+        <div>
+            <a href="Equipos.html"><b>Equipos</b></a>
+            <ul>
+                <li><a href="Equipos/E_AchoPijo.html">Acho Pijo</a></li>
+                <li><a href="Equipos/E_Alados.html">Alados</a></li>
+                <li><a href="Equipos/E_Alcorcon.html">Alcorcon FC</a></li>
+                <li><a href="Equipos/E_Belloteros.html">Belloteros</a></li>
+                <li><a href="Equipos/E_Betis.html">Betis</a></li>
+                <li><a href="Equipos/E_Castilla.html">Castilla</a></li>
+                <li><a href="Equipos/E_Fontaneses.html">Los Fontaneses</a></li>
+                <li><a href="Equipos/E_Leones.html">Leones</a></li>
+                <li><a href="Equipos/E_Lobos.html">Lobos FC</a></li>
+                <li><a href="Equipos/E_Romanos.html">Romanos</a></li>
+                <li><a href="Equipos/E_Sevilla.html">Sevilla FC</a></li>
+                <li><a href="Equipos/E_Toros.html">Toros FC</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="Contacto.html"><b>Contacto</b></a>
+            <ul>
+                <li><b>Telefono:</b>924876531</li>
+                <li><b>Email:</b>info@futbolChapas.es</li>
+                <li><b>Dirección:</b>Plaza de la Florida, 20, 28008 Madrid, España</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

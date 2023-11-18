@@ -1,0 +1,392 @@
+/*body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    color: #000;
+    text-decoration:none;
+}*/
+
+/* header */
+
+/*#Menu {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#Menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#Menu li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+#Menu li a:hover,
+#Menu #menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+#Menu #Logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}*/
+
+/* menu */
+
+/*#Menu #menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+/*#Menu #menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+#Menu #menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+#Menu #menu-icon .navicon:before,
+#Menu #menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+#Menu #menu-icon .navicon:before {
+    top: 5px;
+}
+
+#Menu #menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+/*#Menu #menu-btn {
+    display: none;
+}
+
+#Menu #menu-btn:checked ~ #menu {
+    max-height: 240px;
+}
+
+#Menu #menu-btn:checked ~ #menu-icon .navicon {
+    background: transparent;
+}
+
+#Menu #menu-btn:checked ~ #menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+#Menu #menu-btn:checked ~ #menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+#Menu #menu-btn:checked ~ #menu-icon:not(.steps) .navicon:before,
+#Menu #menu-btn:checked ~ #menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}*/
+
+/* Estilo del footer */
+#MapaWeb {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #040707;
+    color: #ffffff;
+    width: 100%;
+}
+
+#MapaWeb a {
+    color: #ffffff;
+    text-decoration:none;
+}
+#MapaWeb ul{
+    list-style: none;
+}
+#MapaWeb>div{
+    margin: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#MapaWebFoto {
+    width: 38%; /* El cambio clave para que ocupe el 38% de la pantalla */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+}
+
+#MapaWebFoto a img {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+}
+#MapaWebLiga {
+    width: 15%; /* El cambio clave para que ocupe el 15% de la pantalla */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+}
+
+#MapaWebEquipos {
+    width: 15%; /* El cambio clave para que ocupe el 15% de la pantalla */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+}
+
+#MapaWebContacto {
+    width: 23%; /* El cambio clave para que ocupe el 23% de la pantalla */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+}
+
+/* Tabla de la liga*/
+
+#Clasi_Liga {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#Tabla_Clasi_Liga {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Tabla_Clasi_Liga th,
+#Tabla_Clasi_Liga td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#Tabla_Clasi_Liga a{
+    color: #000000;
+    text-decoration:none;
+}
+
+#Tabla_Clasi_Liga th {
+    background-color: #f2f2f2;
+}
+
+#Tabla_Clasi_Liga img{
+    width: 25px;
+}
+
+#Tabla_Clasi_Liga tr:hover {
+    background-color: #f5f5f5;
+}
+
+#Tabla_Clasi_Liga th abbr,
+#Tabla_Clasi_Liga td abbr {
+    text-decoration: underline;
+    border-bottom: 1px dotted #555;
+    cursor: help;
+    position: relative;
+    color: #555;
+}
+
+#Tabla_Clasi_Liga th abbr:hover,
+#Tabla_Clasi_Liga td abbr:hover {
+    color: #333;
+    border-bottom: 1px dotted #333;
+}
+
+
+
+
+
+
+/*
+Vista tablet
+ */
+@media (320px < width <= 1024px) {
+    /* Estilo del footer */
+    #MapaWeb {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #040707;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    #MapaWeb a {
+        color: #ffffff;
+        text-decoration:none;
+    }
+    #MapaWeb ul{
+        list-style: none;
+    }
+    #MapaWeb>div{
+        margin: 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    #MapaWebFoto {
+        width: 49%; /* El cambio clave para que ocupe el 38% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebFoto a img {
+        width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    }
+    #MapaWebLiga {
+        width: 24%; /* El cambio clave para que ocupe el 15% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebEquipos {
+        width: 24%; /* El cambio clave para que ocupe el 15% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebContacto {
+        width: 30%; /* El cambio clave para que ocupe el 23% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+        align-content: center;
+    }
+}
+/*
+Vista movil
+ */
+@media (width <= 320px) {
+    /* Estilo del footer */
+    #MapaWeb {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #040707;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    #MapaWeb a {
+        color: #ffffff;
+        text-decoration:none;
+    }
+    #MapaWeb ul{
+        list-style: none;
+    }
+    #MapaWeb>div{
+        margin: 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    #MapaWebFoto {
+        width: 49%; /* El cambio clave para que ocupe el 38% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebFoto a img {
+        width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    }
+    #MapaWebLiga {
+        width: 49%; /* El cambio clave para que ocupe el 15% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebEquipos {
+        width: 49%; /* El cambio clave para que ocupe el 15% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    #MapaWebContacto {
+        width: 49%; /* El cambio clave para que ocupe el 23% de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho */
+    }
+
+    /* Tabla de la liga*/
+
+    #Clasi_Liga {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #Tabla_Clasi_Liga {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #Tabla_Clasi_Liga th,
+    #Tabla_Clasi_Liga td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #Tabla_Clasi_Liga a{
+        color: #000000;
+        text-decoration:none;
+    }
+
+    #Tabla_Clasi_Liga th {
+        background-color: #f2f2f2;
+    }
+
+    #Tabla_Clasi_Liga img{
+        width: 25px;
+    }
+
+    #Tabla_Clasi_Liga tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    #Tabla_Clasi_Liga th abbr,
+    #Tabla_Clasi_Liga td abbr {
+        text-decoration: underline;
+        border-bottom: 1px dotted #555;
+        cursor: help;
+        position: relative;
+        color: #555;
+    }
+
+    #Tabla_Clasi_Liga th abbr:hover,
+    #Tabla_Clasi_Liga td abbr:hover {
+        color: #333;
+        border-bottom: 1px dotted #333;
+    }
+    #Tabla_Clasi_Liga td:nth-child(3),
+    #Tabla_Clasi_Liga th:nth-child(3),
+    #Tabla_Clasi_Liga td:nth-child(4),
+    #Tabla_Clasi_Liga th:nth-child(4),
+    #Tabla_Clasi_Liga td:nth-child(5),
+    #Tabla_Clasi_Liga th:nth-child(5),
+    #Tabla_Clasi_Liga td:nth-child(6),
+    #Tabla_Clasi_Liga th:nth-child(6),
+    #Tabla_Clasi_Liga td:nth-child(7),
+    #Tabla_Clasi_Liga th:nth-child(7),
+    #Tabla_Clasi_Liga td:nth-child(8),
+    #Tabla_Clasi_Liga th:nth-child(8),
+    #Tabla_Clasi_Liga td:nth-child(9),
+    #Tabla_Clasi_Liga th:nth-child(9) {
+        display: none;
+    }
+}
