@@ -1,5 +1,16 @@
-Los equipos cuyo HTML esta montado son:
-    -Romanos
-    -Los Fontaneses
-    -Bellotero
-    -Acho Pijo
+------------------------------------------------------------------------------------------------------------------------
+MÍNIMOS
+------------------------------------------------------------------------------------------------------------------------
+> Uso de APIs HTML5: En todas las página de los equipos y la de contacto.
+> Inserción de elementos multimedia: Esto esta en Multimedia.
+> Web adaptable con CSS3 / Media Queries: Esta en todas las web, hay para tablet y mvl.
+> Menú de hamburguesa: Cuando se adapta.
+> Buscador de noticias con AJAX: Se aplica en HTML/Partido.html
+> Uso de Cookies: Esta aplicada en tienda.
+> Uso de jQuery: Se aplica en HTML/Equipos.html
+
+------------------------------------------------------------------------------------------------------------------------
+EXTRA
+------------------------------------------------------------------------------------------------------------------------
+> Se ha añadido favicon.
+> Se desplego en firebase (futbol-chapas-jgarciakax.web.app o futbol-chapas-jgarciakax.firebaseapp.com)

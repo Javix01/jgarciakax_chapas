@@ -2,192 +2,456 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Futbol Chapas</title>
     <link rel="icon" type="image/x-icon" href="../../img/logo.png">
-    <link rel="stylesheet" type="text/css" href="../../CSS/Estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/Equipo.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Flecha.css" media="screen" />
+    <script src="../../Js/Flecha.js"></script>
+    <script src="../../Js/Nav.js"></script>
+    <script src="../../Js/Cromo.js"></script>
+    <script src="../../Js/Equipo.js"></script>
+
 </head>
 
 <body>
-    <div id="Menu">
-        <ul class="menu">
-            <li><a href="../../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy"></a></li>
-            <li><a href="../Tienda.html">Tienda</a></li>
-            <li><a href="../Liga.html">La Liga</a></li>
-            <ul>
-                <li><a href="../../Documento/Reglamento.pdf">Normativa.</a></li>
+<header class="header">
+    <div class="child-header">
+        <div class="box-logo">
+            <a href="../../index.html" class="link-logo"><img alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy"></a>
+        </div>
+
+        <nav class="box-menu-navegacion" id="menu-navegacion">
+            <ul class="menu-navegacion">
+
+                <li class="item-menu item-menu-sub-menu">
+                    <a href="../Liga.html" class="item-menu-link">La Liga</a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li class="item-menu">
+                            <a href="../../Documento/Reglamento.pdf" class="item-menu-link">Reglamento</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="../Partido.html" class="item-menu-link">Partidos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-menu item-menu-sub-menu">
+                    <a href="../Equipos.html" class="item-menu-link">Equipos y Jugadores</a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li class="item-menu">
+                            <a href="E_AchoPijo.html" class="item-menu-link">Acho Pijo</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Alados.html" class="item-menu-link">Alados</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Alcorcon.html" class="item-menu-link">Alcorcon FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Belloteros.html" class="item-menu-link">Belloteros</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Betis.html" class="item-menu-link">Betis</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Castilla.html" class="item-menu-link">Castilla</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Fontaneses.html" class="item-menu-link">Los Fontaneses</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Leones.html" class="item-menu-link">Leones</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Lobos.html" class="item-menu-link">Lobos FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Romanos.html" class="item-menu-link">Romanos</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Sevilla.html" class="item-menu-link">Sevilla FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="E_Toros.html" class="item-menu-link">Toros FC</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-menu">
+                    <a href="../Tienda.html" class="item-menu-link">Tienda</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="../Multimedia.html" class="item-menu-link">Multimedia</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="../Contacto.html" class="item-menu-link">Contacto</a>
+                </li>
             </ul>
-            <li><a href="../Equipos.html">Equipos</a></li>
-            <!-- Desplegable con todos los equipos -->
-            <ul>
-                <li><a href="E_AchoPijo.html">Acho Pijo</a></li>
-                <li><a href="E_Alados.html">Alados</a></li>
-                <li><a href="E_Alcorcon.html">Alcorcon FC</a></li>
-                <li><a href="E_Belloteros.html">Belloteros</a></li>
-                <li><a href="E_Betis.html">Betis</a></li>
-                <li><a href="E_Castilla.html">Castilla</a></li>
-                <li><a href="E_Fontaneses.html">Los Fontaneses</a></li>
-                <li><a href="E_Leones.html">Leones</a></li>
-                <li><a href="E_Lobos.html">Lobos FC</a></li>
-                <li><a href="E_Romanos.html">Romanos</a></li>
-                <li><a href="E_Sevilla.html">Sevilla FC</a></li>
-                <li><a href="E_Toros.html">Toros FC</a></li>
-            </ul>
-            <li><a href="../Multimedia.html">Multimedia</a></li>
-            <li><a href="../Contacto.html">Contacto</a></li>
-            <li><img data-retina="50" data-height="50" alt="imagen de carrito de la compra." src="../../img/carrito.png" loading="lazy"></li>
-            <li><img data-retina="50" data-height="50" alt="imagen de usuario." src="../../img/usuario.png" loading="lazy"></li>
-        </ul>
-        <!--Faltarian el carrito para añadir las cosas y para poder llegas a hacer un login-->
+        </nav>
+
+        <button class="btn-hamburguesa" id="btn-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </div>
+</header>
 
-    <div id="Info_Equipo">
 
-        <!-- Mostraremos los productos con el siguiente formato
-        __________________________________________________
-        |      |                 | Clasificación | Puntos |
-        | Foto | Info del equipo |       P       |   Nº   |
-        |______|_________________|_______________|________|
-        -->
-        <h1>ROMANOS</h1>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <table border="1" width="90%">
-            <tr>
-                <td width="55%">
-                    <table>
-                        <tr>
-                            <td><b>Nombre del equipo:</b></td>
-                            <td>Romanos.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Base:</b></td>
-                            <td>Mérida, Badajoz, Extremadura, España.</td>
-                        </tr>
-                        <tr>
-                            <td><b>Presidente:</b></td>
-                            <td>Mariano Santiponce Gracia</td>
-                        </tr>
-                        <tr>
-                            <td><b>Entrenador:</b></td>
-                            <td>Manolo Gutiérrez Ros</td>
-                        </tr>
-                        <tr>
-                            <td><b>Liga de debut:</b></td>
-                            <td>2008</td>
-                        </tr>
-                        <tr>
-                            <td><b>Campeonatos de liga:</b></td>
-                            <td>2</td>
-                        </tr>
-                    </table>
-                </td>
+<div id="Info_Equipo">
 
-                <td width="10%">
-                    <p><b>PUESTO</b>
-                    <br>
-                    2º</p>
-                </td>
+    <!-- Mostraremos los equipo con el siguiente formato
+    __________________________________________________
+    |      |                 | Clasificación | Puntos |
+    | Foto | Info del equipo |       P       |   Nº   |
+    |______|_________________|_______________|________|
+    -->
+    <h1>BETIS</h1>
+    <img data-retina="50" data-height="50" alt="Escudo Betis" src="../../img/E_Betis.png" loading="lazy"></li>
+    </br>
+    <table>
+        <tr>
+            <td width="55%" rowspan="2">
+                <table>
+                    <tr>
+                        <td><b>Nombre del equipo:</b></td>
+                        <td>BETIS.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Base:</b></td>
+                        <td>Sevilla, Sevilla, Andalucía, España.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Presidente:</b></td>
+                        <td>Isidora García Sánchez</td>
+                    </tr>
+                    <tr>
+                        <td><b>Entrenador:</b></td>
+                        <td>Pablo Martínez López</td>
+                    </tr>
+                    <tr>
+                        <td><b>Liga de debut:</b></td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td><b>Campeonatos de liga:</b></td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </td>
 
-                <td width="10%">
-                    <p><b>PUNTOS</b>
-                    <br>
-                    5</p>
-                </td>
-            </tr>
-        </table>
+            <td width="10%">
+                <p style="text-align: center;"><b>PUESTO</b></p>
+            </td>
+
+            <td width="10%">
+                <p style="text-align: center;"><b>PUNTOS</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+                <p style="text-align: center;"><b>6º</b></p>
+            </td>
+
+            <td width="10%">
+                <p style="text-align: center;"><b>16</b></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="E_mienbros">
+    <h2>JUGADORES</h2>
+    <div class="equipo">
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Martina Pérez Rodríguez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas1')">Mostrar Estadísticas</button>
+                <div id="estadisticas1" class="hidden">
+                    <p>Partidos Jugados: 236</p>
+                    <p>Goles: 30</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Matías Sánchez Martínez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas2')">Mostrar Estadísticas</button>
+                <div id="estadisticas2" class="hidden">
+                    <p>Partidos Jugados: 5</p>
+                    <p>Goles: 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Amelia López Hernández</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas3')">Mostrar Estadísticas</button>
+                <div id="estadisticas3" class="hidden">
+                    <p>Partidos Jugados: 10</p>
+                    <p>Goles: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Javier Rodríguez Sánchez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas4')">Mostrar Estadísticas</button>
+                <div id="estadisticas4" class="hidden">
+                    <p>Partidos Jugados: 10</p>
+                    <p>Goles: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Maite Martínez López</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas5')">Mostrar Estadísticas</button>
+                <div id="estadisticas5" class="hidden">
+                    <p>Partidos Jugados: 130</p>
+                    <p>Goles: 124</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Tomás Hernández Ramírez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas6')">Mostrar Estadísticas</button>
+                <div id="estadisticas6" class="hidden">
+                    <p>Partidos Jugados: 102</p>
+                    <p>Goles: 53</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Sofía García Rodríguez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas7')">Mostrar Estadísticas</button>
+                <div id="estadisticas7" class="hidden">
+                    <p>Partidos Jugados: 95</p>
+                    <p>Goles: 51</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Thiago Martínez López</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas8')">Mostrar Estadísticas</button>
+                <div id="estadisticas8" class="hidden">
+                    <p>Partidos Jugados: 42</p>
+                    <p>Goles: 32</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Catalina Pérez Sánchez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas9')">Mostrar Estadísticas</button>
+                <div id="estadisticas9" class="hidden">
+                    <p>Partidos Jugados: 110</p>
+                    <p>Goles: 100</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Alejandro González Martínez</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas10')">Mostrar Estadísticas</button>
+                <div id="estadisticas10" class="hidden">
+                    <p>Partidos Jugados: 25</p>
+                    <p>Goles: 24</p>
+                </div>
+            </div>
+        </div>
+        <div class="cromo">
+            <div class="C_header">
+                <h3>Valentina Sánchez Hernández</h3>
+            </div>
+            <div class="content">
+                <img src="../../img/E_Betis.png" alt="Jugador">
+                </br>
+                <button onclick="mostrarEstadisticas('estadisticas11')">Mostrar Estadísticas</button>
+                <div id="estadisticas11" class="hidden">
+                    <p>Partidos Jugados: 172</p>
+                    <p>Goles: 53</p>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div id="E_mienbros">
-        <h3>JUGADORES</h3>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
-        <img data-retina="50" data-height="50" alt="Logo del equipo Romanos de la ciudad de Mérida" src="../../img/E_Romanos.png" loading="lazy"></li>
+<div id="alineacion">
+    <h2>Alineación.</h2>
+    <div id="Campo">
+        <img width="80%" alt="imagen decampo de futbol" src="../../img/Campo_futbol.webp" loading="lazy">
+
+        <div id="div1" class="divN" ondrop="drop(event, 'div1')" ondragover="allowDrop(event)"></div>
+        <div id="div2" class="divN" ondrop="drop(event, 'div2')" ondragover="allowDrop(event)"></div>
+        <div id="div3" class="divN" ondrop="drop(event, 'div3')" ondragover="allowDrop(event)"></div>
+        <div id="div4" class="divN" ondrop="drop(event, 'div4')" ondragover="allowDrop(event)"></div>
     </div>
+    <h3>Jugadores</h3>
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag1">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag2">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag3">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag4">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag5">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag6">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag7">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag8">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag9">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag10">
+    <img src="../../img/E_Betis.png" draggable="true" ondragstart="drag(event)" id="drag11">
+</div>
 
-    <div id="E_Contacto">
-        <p>
-            <h3>CONTACTO.</h3>
-            <b>Telefono:</b> 924517863
-            <br>
-            <b>Email:</b> romanos@ligaespañolafutbolchapas.es
-            <br>
-            <b>X</b>
-            <br>
-            <b>Intagram</b>
-            <br>
-            <b>Sede:</b> Calle Pontezuelas, 70, 06800 Mérida, Badajoz, Extremadura, España.
-            <div id="map" style="width:100%;height:600px"></div>
-        </p>
-        <script>
-            function Map123() {
-                var mapOptions = {
-                    center:new google.maps.LatLng(38.918516, -6.337417),
-                    zoom: 20,
-                    mapTypeId: 'satellite'
-                }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+<div id="E_Contacto">
+    <p>
+    <h2>CONTACTO.</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+    </svg> 924517863
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+    </svg>  <a href="mailto:betis@ligaespañolafutbolchapas.es"> betis@ligaespañolafutbolchapas.es </a>
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+    </svg> Av. de Italia, s/n, 41012 Sevilla, Sevilla, Andalucía, España.
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+    </svg>
+    <div id="map" style="width:100%;height:600px"></div>
+    </p>
+    <script>
+        function Map123() {
+            var mapOptions = {
+                center:new google.maps.LatLng(37.350993, -5.981836),
+                zoom: 20,
+                mapTypeId: 'satellite'
             }
-        </script>
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123">
-        </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123">
+    </script>
+</div>
+
+<footer id="MapaWeb">
+    <div class="pie" id="MapaWebFoto">
+        <a href="../../index.html">
+            <img alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy">
+        </a>
     </div>
 
-    <footer id="MapaWeb">
-        <table border="0" width="100%">
-            <tr>
-                <td width="20%">
-                    <a href="../../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../../img/logo.png" loading="lazy"></a></li>
-                </td>
+    <div class="pie" id="MapaWebLiga">
+        <a href="../Liga.html"><b>La Liga</b></a>
+        <ul>
+            <li><a href="../../Documento/Reglamento.pdf">Documentación</a></li>
+            <li><a href="../Partido.html">Partidos</a></li>
+        </ul>
+        <br>
+        <a href="../Tienda.html"><b>Tienda</b></a>
+        <br>
+        <br>
+        <a href="../Multimedia.html"><b>Multimedia</b></a>
+    </div>
 
-                <td width="20%">
-                    <a href="../Liga.html"><b>La Liga</b></a>
-                    <ul>
-                        <li><a href="../../Documento/Reglamento.pdf">Documentación</a></li>
-                    </ul>
-                </td>
+    <div class="pie" id="MapaWebEquipos">
+        <a href="../Equipos.html"><b>Equipos Y Jugadores</b></a>
+        <ul>
+            <li><a href="E_AchoPijo.html">Acho Pijo</a></li>
+            <li><a href="E_Alados.html">Alados</a></li>
+            <li><a href="E_Alcorcon.html">Alcorcon FC</a></li>
+            <li><a href="E_Belloteros.html">Belloteros</a></li>
+            <li><a href="E_Betis.html">Betis</a></li>
+            <li><a href="E_Castilla.html">Castilla</a></li>
+            <li><a href="E_Fontaneses.html">Los Fontaneses</a></li>
+            <li><a href="E_Leones.html">Leones</a></li>
+            <li><a href="E_Lobos.html">Lobos FC</a></li>
+            <li><a href="E_Romanos.html">Romanos</a></li>
+            <li><a href="E_Sevilla.html">Sevilla FC</a></li>
+            <li><a href="E_Toros.html">Toros FC</a></li>
+        </ul>
+    </div>
 
-                <td width="20%">
-                    <a href="../Equipos.html"><b>Equipos</b></a>
-                    <ul>
-                        <li><a href="E_AchoPijo.html">Acho Pijo</a></li>
-                        <li><a href="E_Alados.html">Alados</a></li>
-                        <li><a href="E_Alcorcon.html">Alcorcon FC</a></li>
-                        <li><a href="E_Belloteros.html">Belloteros</a></li>
-                        <li><a href="E_Betis.html">Betis</a></li>
-                        <li><a href="E_Castilla.html">Castilla</a></li>
-                        <li><a href="E_Fontaneses.html">Los Fontaneses</a></li>
-                        <li><a href="E_Leones.html">Leones</a></li>
-                        <li><a href="E_Lobos.html">Lobos FC</a></li>
-                        <li><a href="E_Romanos.html">Romanos</a></li>
-                        <li><a href="E_Sevilla.html">Sevilla FC</a></li>
-                        <li><a href="E_Toros.html">Toros FC</a></li>
-                    </ul>
-                </td>
-
-                <td width="20%">
-                    <a href="../Tienda.html"><b>Tienda</b></a>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="../Multimedia.html"><b>Multimedia</b></a>
-                </td>
-
-                <td width="20%">
-                    <a href="../Contacto.html"><b>Contacto</b></a>
-                    <li><b>Telefono:</b>924876531</li>
-                    <li><b>Email:</b>info@futbolChapas.es</li>
-                    <li><b>Dirección:</b>Plaza de la Florida, 20, 28008 Madrid, España</li>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
+    <div class="pie" id="MapaWebContacto">
+        <a href="../Contacto.html"><b>Contacto</b></a>
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>  924876531</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+            </svg>  <a href="mailto:info@futbolChapas.es">info@futbolChapas.es</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+            </svg>  Plaza de la Florida, 20, 28008 Madrid, España</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></li>
+        </ul>
+    </div>
+</footer>
+<button onclick="topFunction()" id="btnSubirArriba" title="Ir arriba">&#8593;</button>
 </body>
 </html>

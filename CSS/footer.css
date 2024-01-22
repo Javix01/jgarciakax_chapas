@@ -1,0 +1,46 @@
+#MapaWeb {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    overflow: hidden; /* Evita que el contenedor crezca para contener los elementos flotantes */
+}
+
+.pie {
+    padding: 1%;
+    float: left;
+    width: 23%;
+    box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
+}
+
+.pie img {
+    width: 100%;
+    height: auto;
+}
+
+#MapaWeb a {
+    text-decoration: none;
+    color: white;
+}
+
+.pie li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 700px) {
+    .pie {
+        width: 47%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pie {
+        width: 97%;
+    }
+}

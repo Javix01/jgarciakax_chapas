@@ -1,0 +1,101 @@
+<LIGA>
+    <PARTIDO>
+        <IMGLOCAL>../img/E_AchoPijo.png</IMGLOCAL>
+        <LOCAL>Acho Pijo</LOCAL>
+        <RESULTADO>2-1</RESULTADO>
+        <VISITANTE>Leones</VISITANTE>
+        <IMGVISITANTE>../img/E_Leones.png</IMGVISITANTE>
+        <FECHA>2/09/2023</FECHA>
+        <LUGAR>Estadio Municipal</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Santander.png</IMGLOCAL>
+        <LOCAL>Alados</LOCAL>
+        <RESULTADO>0-0</RESULTADO>
+        <VISITANTE>Belloteros</VISITANTE>
+        <IMGVISITANTE>../img/E_Belloteros.png</IMGVISITANTE>
+        <FECHA>7/09/2023</FECHA>
+        <LUGAR>Estadio de las Alas</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Alcorcon.png</IMGLOCAL>
+        <LOCAL>Alcorcon FC</LOCAL>
+        <RESULTADO>3-2</RESULTADO>
+        <VISITANTE>Castilla</VISITANTE>
+        <IMGVISITANTE>../img/E_Castilla.png</IMGVISITANTE>
+        <FECHA>12/09/2023</FECHA>
+        <LUGAR>Estadio Alcorcon</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Belloteros.png</IMGLOCAL>
+        <LOCAL>Belloteros</LOCAL>
+        <RESULTADO>1-1</RESULTADO>
+        <VISITANTE>Leones</VISITANTE>
+        <IMGVISITANTE>../img/E_Leones.png</IMGVISITANTE>
+        <FECHA>18/09/2023</FECHA>
+        <LUGAR>Estadio de las Bellotas</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Betis.png</IMGLOCAL>
+        <LOCAL>Betis</LOCAL>
+        <RESULTADO>2-0</RESULTADO>
+        <VISITANTE>Sevilla FC</VISITANTE>
+        <IMGVISITANTE>../img/E_Sevilla.png</IMGVISITANTE>
+        <FECHA>23/09/2023</FECHA>
+        <LUGAR>Estadio Benito Villamarín</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Castilla.png</IMGLOCAL>
+        <LOCAL>Castilla</LOCAL>
+        <RESULTADO>1-3</RESULTADO>
+        <VISITANTE>Toros FC</VISITANTE>
+        <IMGVISITANTE>../img/E_Toros.png</IMGVISITANTE>
+        <FECHA>29/09/2023</FECHA>
+        <LUGAR>Estadio Castilla</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_LosFontaneses.png</IMGLOCAL>
+        <LOCAL>Los Fontaneses</LOCAL>
+        <RESULTADO>3-2</RESULTADO>
+        <VISITANTE>Lobos FC</VISITANTE>
+        <IMGVISITANTE>../img/E_Lobos.png</IMGVISITANTE>
+        <FECHA>4/10/2023</FECHA>
+        <LUGAR>Estadio la parrita</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Leones.png</IMGLOCAL>
+        <LOCAL>Leones</LOCAL>
+        <RESULTADO>0-2</RESULTADO>
+        <VISITANTE>Romanos</VISITANTE>
+        <IMGVISITANTE>../img/E_Romanos.png</IMGVISITANTE>
+        <FECHA>10/10/2023</FECHA>
+        <LUGAR>Estadio Leonés</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_Sevilla.png</IMGLOCAL>
+        <LOCAL>Sevilla FC</LOCAL>
+        <RESULTADO>1-1</RESULTADO>
+        <VISITANTE>Toros FC</VISITANTE>
+        <IMGVISITANTE>../img/E_Toros.png</IMGVISITANTE>
+        <FECHA>15/10/2023</FECHA>
+        <LUGAR>Estadio Ramón Sánchez-Pizjuán</LUGAR>
+    </PARTIDO>
+
+    <PARTIDO>
+        <IMGLOCAL>../img/E_LosFontaneses.png</IMGLOCAL>
+        <LOCAL>Los Fontaneses</LOCAL>
+        <RESULTADO>4-3</RESULTADO>
+        <VISITANTE>Romanos</VISITANTE>
+        <IMGVISITANTE>../img/E_Romanos.png</IMGVISITANTE>
+        <FECHA>5/12/2023</FECHA>
+        <LUGAR>Estadio la parrita</LUGAR>
+    </PARTIDO>
+</LIGA>

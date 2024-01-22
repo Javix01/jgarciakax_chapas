@@ -1,0 +1,43 @@
+h2 {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+div.galeria img, div.galeria frame {
+    width: 100%;
+    height: auto;
+    height: 180px;
+    object-fit: cover;
+}
+
+.responvididad {
+    padding: 0 6px;
+    float: left;
+    width: 23%;
+    height: 180px;
+    margin-bottom: 2px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (width < 701px) {
+    .responvididad {
+        width: 47%;
+        margin: 6px 0;
+        height: 180px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (width < 501px) {
+    .responvididad {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+}

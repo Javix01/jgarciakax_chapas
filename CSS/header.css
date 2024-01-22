@@ -1,0 +1,196 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* header
+****************************/
+.header {
+    width: 100%;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.child-header {
+    max-width: 1400px;
+    padding: 0 5%;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo
+****************************/
+.link-logo img{
+    width: 20%;
+    height: auto;
+}
+
+/* menu de navegacion
+****************************/
+.box-menu-navegacion {
+    width: 50%;
+}
+
+.box-menu-navegacion ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-menu-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff; /* Texto blanco */
+    transition: .3s linear;
+    padding: 1.8rem 0;
+    display: inline-block;
+}
+
+/* hover */
+.item-menu-link:hover {
+    color: #d92626;
+}
+
+.item-menu-sub-menu:hover i {
+    color: #d92626;
+    transition: .3s linear;
+}
+
+/* boton hamburguesa
+****************************/
+.btn-hamburguesa {
+    display: none;
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hamburguesa span {
+    height: 2px;
+    display: block;
+    background-color: #fff; /* Cambiado a blanco */
+    width: 25px;
+    border-radius: 20px;
+}
+
+.btn-hamburguesa span:nth-child(2) {
+    margin: .4rem 0;
+}
+
+/* sub menu
+****************************/
+.item-menu-sub-menu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: #000; /* Fondo negro para el sub-menu */
+    color: #fff; /* Texto blanco para el sub-menu */
+    transform: scaley(0);
+    transform-origin: top;
+    transition: transform .3s linear;
+    z-index: 1; /* Poner el sub-menu en primer plano */
+}
+
+.sub-menu .item-menu-link {
+    padding: .8rem;
+}
+
+/* hover */
+.item-menu-sub-menu:hover .sub-menu {
+    transform: scaley(1);
+    z-index: 2; /* Asegurar que el sub-menu esté en primer plano al desplegarse */
+}
+
+@media screen and (max-width: 980px) {
+    /* boton hamburguesa
+    ****************************/
+    .btn-hamburguesa {
+        display: block;
+    }
+
+    /*  header
+    ****************************/
+    .header {
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    /*  menu de navegacion
+    ****************************/
+    .box-menu-navegacion {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000; /* Fondo negro */
+        width: 100%;
+        transform: scaley(0);
+        transform-origin: top;
+        transition: .3s linear;
+        padding: 0 2rem;
+    }
+
+    .menu-navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-menu-link {
+        padding: 1rem 0;
+    }
+
+    .item-menu-sub-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .sub-menu {
+        width: 100%;
+        position: initial;
+        transform: scaley(1);
+        /*display: none;*/
+        display: block !important; /* Agregamos !important para asegurar que prevalezca sobre otras reglas */
+    }
+
+    /*  activador sub menu
+    ****************************/
+    .viewMenu {
+        transform: scaley(1);
+        z-index: 2;
+    }
+
+    /*  hover
+    ****************************/
+    .item-menu-link:hover,
+    .item-menu-sub-menu:hover i {
+        color: initial;
+    }
+
+    /* Hacer que los elementos con submenús sean desplegables */
+    .sub-menu .item-menu-sub-menu {
+        cursor: pointer;
+    }
+}

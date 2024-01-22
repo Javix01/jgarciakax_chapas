@@ -1,0 +1,38 @@
+#Grill_Equipos {
+    text-align: center;
+}
+
+.equipo {
+    display: inline-block;
+    margin: 20px;
+}
+
+h2 {
+    background-color: green;
+    padding: 10px; /* Añadir relleno opcional para mejorar la apariencia */
+    color: white; /* Añadir color de texto para mejorar la visibilidad */
+    text-align: center;
+}
+
+#jugadoresmvl table {
+    width: 98%;
+}
+
+#jugadoresmvl td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+
+#jugadoresmvl thead{
+    background-color: black;
+    color: white;
+}
+
+#jugadoresmvl{
+    max-height: 500px;
+    overflow: scroll;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left: 1%;
+}

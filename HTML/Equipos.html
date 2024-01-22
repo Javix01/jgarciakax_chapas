@@ -2,156 +2,800 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Futbol Chapas</title>
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <link rel="stylesheet" type="text/css" href="../CSS/Estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Equipos.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/Flecha.css" media="screen" />
+    <script src="../Js/Equipos.js"></script>
+    <script src="../Js/Nav.js"></script>
+    <script src="../Js/Flecha.js"></script>
+
 </head>
 <body>
-    <header id="Menu">
-        <ul class="menu">
-            <li><a href="../Index.html"><img data-retina="50" data-height="50" alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy"></a></li>
-            <li><a href="Tienda.html">Tienda</a></li>
-            <li><a href="Liga.html">La Liga</a></li>
-            <ul>
-                <li><a href="../Documento/Reglamento.pdf">Normativa.</a></li>
+<header class="header">
+    <div class="child-header">
+        <div class="box-logo">
+            <a href="../index.html" class="link-logo"><img alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy"></a>
+        </div>
+
+        <nav class="box-menu-navegacion" id="menu-navegacion">
+            <ul class="menu-navegacion">
+
+                <li class="item-menu item-menu-sub-menu">
+                    <a href="Liga.html" class="item-menu-link">La Liga</a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li class="item-menu">
+                            <a href="../Documento/Reglamento.pdf" class="item-menu-link">Reglamento</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Partido.html" class="item-menu-link">Partidos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-menu item-menu-sub-menu">
+                    <a href="Equipos.html" class="item-menu-link">Equipos y Jugadores</a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li class="item-menu">
+                            <a href="Equipos/E_AchoPijo.html" class="item-menu-link">Acho Pijo</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Alados.html" class="item-menu-link">Alados</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Alcorcon.html" class="item-menu-link">Alcorcon FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Belloteros.html" class="item-menu-link">Belloteros</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Betis.html" class="item-menu-link">Betis</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Castilla.html" class="item-menu-link">Castilla</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Fontaneses.html" class="item-menu-link">Los Fontaneses</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Leones.html" class="item-menu-link">Leones</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Lobos.html" class="item-menu-link">Lobos FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Romanos.html" class="item-menu-link">Romanos</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Sevilla.html" class="item-menu-link">Sevilla FC</a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="Equipos/E_Toros.html" class="item-menu-link">Toros FC</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-menu">
+                    <a href="Tienda.html" class="item-menu-link">Tienda</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="Multimedia.html" class="item-menu-link">Multimedia</a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="Contacto.html" class="item-menu-link">Contacto</a>
+                </li>
             </ul>
-            <li><a href="Equipos.html">Equipos</a></li>
-            <!-- Desplegable con todos los equipos -->
-            <ul>
-                <li><a href="Equipos/E_AchoPijo.html">Acho Pijo</a></li>
-                <li><a href="Equipos/E_Alados.html">Alados</a></li>
-                <li><a href="Equipos/E_Alcorcon.html">Alcorcon FC</a></li>
-                <li><a href="Equipos/E_Belloteros.html">Belloteros</a></li>
-                <li><a href="Equipos/E_Betis.html">Betis</a></li>
-                <li><a href="Equipos/E_Castilla.html">Castilla</a></li>
-                <li><a href="Equipos/E_Fontaneses.html">Los Fontaneses</a></li>
-                <li><a href="Equipos/E_Leones.html">Leones</a></li>
-                <li><a href="Equipos/E_Lobos.html">Lobos FC</a></li>
-                <li><a href="Equipos/E_Romanos.html">Romanos</a></li>
-                <li><a href="Equipos/E_Sevilla.html">Sevilla FC</a></li>
-                <li><a href="Equipos/E_Toros.html">Toros FC</a></li>
-            </ul>
-            <li><a href="Multimedia.html">Multimedia</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><img data-retina="50" data-height="50" alt="imagen de carrito de la compra." src="../img/carrito.png" loading="lazy"></li>
-            <li><img data-retina="50" data-height="50" alt="imagen de usuario." src="../img/usuario.png" loading="lazy"></li>
-        </ul>
-    </header>
+        </nav>
+
+        <button class="btn-hamburguesa" id="btn-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
 
     <div id="Grill_Equipos">
-        <h1>EQUIPOS</h1>
-        <!-- Mostraremos los equipos con el siguiente formato
-        ______________________________
-        |      |      |      |      |
-        | Foto | Foto | Foto | Foto |
-        |______|______|______|______|
-        |      |      |      |      |
-        | Foto | Foto | Foto | Foto |
-        |______|______|______|______|
-        ...
-        -->
-        <table border="0" width="100%">
-            <tr>
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Alcorcon.html"><abbr title="Alcorcon"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo de la ciudad de Alcorcon" src="../img/E_Alcorcon.png" loading="lazy"></abbr></a></li>
-                </td>
+        <h2>EQUIPOS</h2>
+            <div class="equipo">
+                <a href="Equipos/E_Alcorcon.html" title="Alcorcon">
+                    <img data-retina="50" data-height="50" alt="Escudo Alcorcon" src="../img/E_Alcorcon.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Belloteros.html"><abbr title="Belloteros"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Belloteros de la ciudad de Monasterio" src="../img/E_Belloteros.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Belloteros.html" title="Belloteros">
+                    <img data-retina="50" data-height="50" alt="Escudo Belloteros" src="../img/E_Belloteros.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Fontaneses.html"><abbr title="Fontaneses"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Los fontaneses de la ciudad de Fuente del Maestre" src="../img/E_LosFontaneses.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Fontaneses.html" title="Fontaneses">
+                    <img data-retina="50" data-height="50" alt="Escudo Fontaneses" src="../img/E_LosFontaneses.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_AchoPijo.html"><abbr title="Acho Pijo"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Acho Pijo de la ciudad de Murcia" src="../img/E_AchoPijo.png" loading="lazy"></abbr></a></li>
-                </td>
-            </tr>
+            <div class="equipo">
+                <a href="Equipos/E_AchoPijo.html" title="Acho Pijo">
+                    <img data-retina="50" data-height="50" alt="Escudo Acho Pijo" src="../img/E_AchoPijo.png" loading="lazy">
+                </a>
+            </div>
 
-            <tr>
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Romanos.html"><abbr title="Romanos"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Romanos de la ciudad de Mérida" src="../img/E_Romanos.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Romanos.html" title="Romanos">
+                    <img data-retina="50" data-height="50" alt="Escudo Romanos" src="../img/E_Romanos.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Alados.html"><abbr title="Alados"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Alados de la ciudad de Santander" src="../img/E_Santander.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Alados.html" title="Alados">
+                    <img data-retina="50" data-height="50" alt="Escudo Alados" src="../img/E_Santander.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Sevilla.html"><abbr title="Sevilla"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Sevilla FC de la ciudad de Sevilla" src="../img/E_Sevilla.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Sevilla.html" title="Sevilla">
+                    <img data-retina="50" data-height="50" alt="Escudo Sevilla" src="../img/E_Sevilla.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Leones.html"><abbr title="Leones"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Leones de la ciudad de Leon" src="../img/E_Leones.png" loading="lazy"></abbr></a></li>
-                </td>
-            </tr>
+            <div class="equipo">
+                <a href="Equipos/E_Leones.html" title="Leones">
+                    <img data-retina="50" data-height="50" alt="Escudo Leones" src="../img/E_Leones.png" loading="lazy">
+                </a>
+            </div>
 
-            <tr>
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Betis.html"><abbr title="Betis"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Betis de la ciudad de Sevilla" src="../img/E_Betis.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Betis.html" title="Betis">
+                    <img data-retina="50" data-height="50" alt="Escudo Betis" src="../img/E_Betis.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Castilla.html"><abbr title="Castilla"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Catilla de la ciudad de Toledo" src="../img/E_Castilla.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Castilla.html" title="Castilla">
+                    <img data-retina="50" data-height="50" alt="Escudo Castilla" src="../img/E_Castilla.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Lobos.html"><abbr title="Lobos"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Lobos FC de la ciudad de Ourense" src="../img/E_Lobos.png" loading="lazy"></abbr></a></li>
-                </td>
+            <div class="equipo">
+                <a href="Equipos/E_Lobos.html" title="Lobos">
+                    <img data-retina="50" data-height="50" alt="Escudo Lobos" src="../img/E_Lobos.png" loading="lazy">
+                </a>
+            </div>
 
-                <td width="25%" align="center">
-                    <a href="Equipos/E_Toros.html"><abbr title="Toros"><img data-retina="50" data-height="50" alt="Imagen del escudo del equipo Toros FC de la ciudad de Madrid" src="../img/E_Toros.png" loading="lazy"></abbr></a></li>
-                </td>
-            </tr>
-        </table>
+            <div class="equipo">
+                <a href="Equipos/E_Toros.html" title="Toros">
+                    <img data-retina="50" data-height="50" alt="Escudo Toros" src="../img/E_Toros.png" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+    <div id="Jugadores">
+        <h2>JUGADORES</h2>
+        <div id="jugadoresmvl">
+            <p>Aqui podra buscar a los jugadores por su nombre, apellido o equipo.</p>
+            <input id="myInput" type="text" placeholder="Buscar...">
+            <br><br>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Equipo</th>
+                </tr>
+                </thead>
+                <tbody id="TablaJugadores">
+                <tr>
+                    <td>Emilio Naranjo Reina</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Ricardo Lobo Ávila</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Jorge Molina Cárdenas</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Simón Meléndez Peralta</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Gustavo Maldonado Ochoa</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Matías Lara Cervantes</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Emiliano Villalobos Segura</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Federico Paredes Pinto</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Rubén Guzmán Espinosa</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Damián Salazar Rosales</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Kevin Ureña Mondragón</td>
+                    <td>Los fontaneses</td>
+                </tr>
+                <tr>
+                    <td>Mateo González Ramos</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Diego Martínez Sánchez</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Alejandro Rodríguez Jiménez</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Daniel López Moreno</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Adrián Pérez Gómez</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Gabriel Hernández Torres</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Samuel Díaz Vázquez</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Antonio Ruiz Castro</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Guillermo Fernández Navarro</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Óscar Serrano Soler</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Iván Torres Medina</td>
+                    <td>Romanos</td>
+                </tr>
+                <tr>
+                    <td>Raúl Gutiérrez Prieto</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Sergio Vidal Bravo</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Nicolás Moya Pascual</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Fernando Morales Ortega</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Esteban Delgado Guerra</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Ángel Santana Cordero</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Carlos Romero Márquez</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Arturo Vega León</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Juan Castro Cruz</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Víctor Carmona Rivas</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Enrique Carrasco Herrera</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Rafael Flores Gallego</td>
+                    <td>Acho pijo</td>
+                </tr>
+                <tr>
+                    <td>Héctor Lozano Montero</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Pedro Gálvez Durán</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Leandro Núñez Salas</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Pablo Soto Ibañez</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Hugo Fuentes Vicente</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Tomás Aguilar Palacios</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Joaquín Marín Collado</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Bruno Benítez Molina</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>César Pacheco Cabello</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Xavi Chacón Quintero</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Miguel Saavedra Robles</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Benjamín Bonilla Camacho</td>
+                    <td>Belloteros</td>
+                </tr>
+                <tr>
+                    <td>Antonella López Martínez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Sebastián Sánchez Sánchez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Mia Rodríguez López</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Facundo Martínez Hernández</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Luciana López Rodríguez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Emilio Hernández Sánchez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Isidora Martínez López</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Pablo López Martínez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Martina Sánchez Sánchez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Matías Rodríguez López</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Amelia Martínez Sánchez</td>
+                    <td>Toros FC</td>
+                </tr>
+                <tr>
+                    <td>Valeria Rodríguez Sánchez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Lucas Martínez Martínez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Victoria López Rodríguez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Santiago Hernández López</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Emma Sánchez Martínez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Nicolás Rodríguez Sánchez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>María Martínez López</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Diego Hernández Rodríguez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Renata Sánchez López</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Andrés Rodríguez Martínez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Regina Martínez Sánchez</td>
+                    <td>Sevilla FC</td>
+                </tr>
+                <tr>
+                    <td>Valentina Pérez Sánchez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Daniel González Martínez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Isabella Fernández Hernández</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Juan Torres Ramírez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Camila Díaz García</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Mateo López Rodríguez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Valeria Sánchez Pérez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Lucas Hernández Martínez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Victoria Ramírez Sánchez</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Santiago Martínez González</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Emma Rodríguez López</td>
+                    <td>Alados</td>
+                </tr>
+                <tr>
+                    <td>Diego Ramírez Hernández</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Renata García López</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Andrés Pérez Martínez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Regina Sánchez Rodríguez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Felipe Martínez López</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Antonella Rodríguez Sánchez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Sebastián López Ramírez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Mia Martínez Hernández</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Facundo Sánchez López</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Luciana Hernández Rodríguez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Emilio Ramírez Martínez</td>
+                    <td>Alcorcon FC</td>
+                </tr>
+                <tr>
+                    <td>Martina Pérez Rodríguez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Matías Sánchez Martínez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Amelia López Hernández</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Javier Rodríguez Sánchez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Maite Martínez López</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Tomás Hernández Ramírez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Sofía García Rodríguez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Thiago Martínez López</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Catalina Pérez Sánchez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Alejandro González Martínez</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Valentina Sánchez Hernández</td>
+                    <td>Betis</td>
+                </tr>
+                <tr>
+                    <td>Juan Pérez Sánchez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Camila Ramírez Rodríguez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Mateo García Martínez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Valeria López Sánchez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Lucas Martínez Ramírez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Victoria Rodríguez Hernández</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Santiago Sánchez López</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Emma Martínez Rodríguez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Nicolás Hernández Martínez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>María Ramírez Sánchez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Diego López Rodríguez</td>
+                    <td>Castilla</td>
+                </tr>
+                <tr>
+                    <td>Regina López Martínez</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Felipe Rodríguez López</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Antonella Martínez Hernández</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Sebastián Sánchez Rodríguez</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Mia Hernández López</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Facundo Martínez Ramírez</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Luciana Rodríguez Sánchez</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Emilio Martínez López</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Isidora López Hernández</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Pablo Sánchez Rodríguez</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Martina Martínez López</td>
+                    <td>Leones</td>
+                </tr>
+                <tr>
+                    <td>Javier Sánchez López</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Maite Hernández Rodríguez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Tomás Martínez Sánchez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Sofía López Martínez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Thiago Rodríguez Sánchez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Catalina Martínez López</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Alejandro Hernández Rodríguez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Valentina Sánchez Martínez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Daniel Ramírez López</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Isabella López Sánchez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                <tr>
+                    <td>Juan Martínez Rodríguez</td>
+                    <td>Lobos FC</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <footer id="MapaWeb">
-        <div>
-            <a href="../Index.html">
-                <img alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy">
-            </a>
-        </div>
+<footer id="MapaWeb">
+    <div class="pie" id="MapaWebFoto">
+        <a href="../index.html">
+            <img alt="imagen del logo de la liga española de futbochapas" src="../img/logo.png" loading="lazy">
+        </a>
+    </div>
 
-        <div>
-            <a href="Liga.html"><b>La Liga</b></a>
-            <ul>
-                <li><a href="../Documento/Reglamento.pdf">Documentación</a></li>
-            </ul>
-            <a href="Tienda.html"><b>Tienda</b></a>
-            <br>
-            <br>
-            <a href="Multimedia.html"><b>Multimedia</b></a>
-        </div>
+    <div class="pie" id="MapaWebLiga">
+        <a href="Liga.html"><b>La Liga</b></a>
+        <ul>
+            <li><a href="../Documento/Reglamento.pdf">Documentación</a></li>
+            <li><a href="Partido.html">Partidos</a></li>
+        </ul>
+        <br>
+        <a href="Tienda.html"><b>Tienda</b></a>
+        <br>
+        <br>
+        <a href="Multimedia.html"><b>Multimedia</b></a>
+    </div>
 
-        <div>
-            <a href="Equipos.html"><b>Equipos</b></a>
-            <ul>
-                <li><a href="Equipos/E_AchoPijo.html">Acho Pijo</a></li>
-                <li><a href="Equipos/E_Alados.html">Alados</a></li>
-                <li><a href="Equipos/E_Alcorcon.html">Alcorcon FC</a></li>
-                <li><a href="Equipos/E_Belloteros.html">Belloteros</a></li>
-                <li><a href="Equipos/E_Betis.html">Betis</a></li>
-                <li><a href="Equipos/E_Castilla.html">Castilla</a></li>
-                <li><a href="Equipos/E_Fontaneses.html">Los Fontaneses</a></li>
-                <li><a href="Equipos/E_Leones.html">Leones</a></li>
-                <li><a href="Equipos/E_Lobos.html">Lobos FC</a></li>
-                <li><a href="Equipos/E_Romanos.html">Romanos</a></li>
-                <li><a href="Equipos/E_Sevilla.html">Sevilla FC</a></li>
-                <li><a href="Equipos/E_Toros.html">Toros FC</a></li>
-            </ul>
-        </div>
+    <div class="pie" id="MapaWebEquipos">
+        <a href="Equipos.html"><b>Equipos Y Jugadores</b></a>
+        <ul>
+            <li><a href="Equipos/E_AchoPijo.html">Acho Pijo</a></li>
+            <li><a href="Equipos/E_Alados.html">Alados</a></li>
+            <li><a href="Equipos/E_Alcorcon.html">Alcorcon FC</a></li>
+            <li><a href="Equipos/E_Belloteros.html">Belloteros</a></li>
+            <li><a href="Equipos/E_Betis.html">Betis</a></li>
+            <li><a href="Equipos/E_Castilla.html">Castilla</a></li>
+            <li><a href="Equipos/E_Fontaneses.html">Los Fontaneses</a></li>
+            <li><a href="Equipos/E_Leones.html">Leones</a></li>
+            <li><a href="Equipos/E_Lobos.html">Lobos FC</a></li>
+            <li><a href="Equipos/E_Romanos.html">Romanos</a></li>
+            <li><a href="Equipos/E_Sevilla.html">Sevilla FC</a></li>
+            <li><a href="Equipos/E_Toros.html">Toros FC</a></li>
+        </ul>
+    </div>
 
-        <div>
-            <a href="Contacto.html"><b>Contacto</b></a>
-            <ul>
-                <li><b>Telefono:</b>924876531</li>
-                <li><b>Email:</b>info@futbolChapas.es</li>
-                <li><b>Dirección:</b>Plaza de la Florida, 20, 28008 Madrid, España</li>
-            </ul>
-        </div>
-    </footer>
-
+    <div class="pie" id="MapaWebContacto">
+        <a href="Contacto.html"><b>Contacto</b></a>
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>  924876531</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+            </svg>  <a href="mailto:info@futbolChapas.es">info@futbolChapas.es</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
+            </svg>  Plaza de la Florida, 20, 28008 Madrid, España</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></li>
+        </ul>
+    </div>
+</footer>
+<button onclick="topFunction()" id="btnSubirArriba" title="Ir arriba">&#8593;</button>
 </body>
 </html>

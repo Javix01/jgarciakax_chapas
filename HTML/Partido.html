@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Futbol Chapas</title>
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/header.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../CSS/footer.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="../CSS/Tienda.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Partido.css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Flecha.css" media="screen" />
-
-    <script src="../Js/Tienda.js"></script>
+    <script src="../Js/Partido.js"></script>
     <script src="../Js/Nav.js"></script>
     <script src="../Js/Flecha.js"></script>
 
-
 </head>
+
 <body>
 <header class="header">
     <div class="child-header">
@@ -108,109 +105,14 @@
     </div>
 </header>
 
-    <div id="Productos_Tienda">
-        <h1>TIENDA.</h1>
+<div id="PartidosFin">
+    <h2>Partidos Finalizados</h2>
+    <p>Pulsa sobre un partido para conocer toda su información.</p>
+    <p><b>Información:</b></p>
+    <table id='showP'></table>
+    <table id="demo"></table>
+</div>
 
-        <div class="container">
-
-            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas1" style="background: #e5730e;">CARRITO</a>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Resumen de Compra</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="offcanvas-body">
-                        <div class="mb-3" id="resumenCompra">
-                            <table border="1">
-                                <thead>
-                                <tr>
-                                    <th>Producto</th>
-                                    <th>Cantidad</th>
-                                    <th>Precio Unitario</th>
-                                    <th>Precio Total</th>
-                                    <th>Acciones</th>
-                                </tr>
-                                </thead>
-                                <tbody id="tablaResumen">
-                                <!-- Aquí se mostrarán las filas de la tabla -->
-                                </tbody>
-                                <tfoot>
-                                <tr>
-                                    <td colspan="3"><b>Total:</b></td>
-                                    <td id="totalCompra"></td>
-                                </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-                crossorigin="anonymous"></script>
-
-        <div class="producto">
-            <div class="imagen">
-                <img data-retina="50" data-height="50" alt="Imagen del campo de futbolchapas" src="../img/Campo.png" loading="lazy">
-            </div>
-            <div class="detalle">
-                <h3>Tablero Plegable</h3>
-                <p>
-                    <b>Precio:</b> 49,99 €
-                    <br>
-                    <b>Descripción:</b> Tablero plegable diseñado para partidas de chapas en cualquier lugar. Portátil y fácil de transportar, garantiza diversión en tus partidos de futbolchapas.
-                </p>
-                <input type="button" value="Añadir al carrito" class="set" onclick="setCookie('Tablero', 'Tablero Plegable', 49.99)">
-            </div>
-        </div>
-
-        <div class="producto">
-            <div class="imagen">
-                <img data-retina="50" data-height="50" alt="Imagen del chapas en blanco de futbolchapas" src="../img/personalizadas.png" loading="lazy">
-            </div>
-            <div class="detalle">
-                <h3>Pack de 10 Chapas Personalizadas</h3>
-                <p>
-                    <b>Precio:</b> 14,99 €
-                    <br>
-                    <b>Descripción:</b> Crea tu equipo personalizado con este pack de 10 chapas personalizadas. Sube tus diseños o imágenes para tener chapas únicas.
-                </p>
-                <input type="button" value="Añadir al carrito" id="10chapas" class="set" onclick="setCookie('Chapas', 'Pack de 10 Chapas Personalizadas', 14.99)">
-            </div>
-        </div>
-
-        <div class="producto">
-            <div class="imagen">
-                <img data-retina="50" data-height="50" alt="Imagen de pizarra blanca con campo de futbol pintado." src="../img/pizarra.png" loading="lazy">
-            </div>
-            <div class="detalle">
-                <h3>Pizarra de Entrenador</h3>
-                <p>
-                    <b>Precio:</b> 13,99 €
-                    <br>
-                    <b>Descripción:</b> Pizarra de estrategia con chapas que te permite dirigir tu propio equipo.
-                </p>
-                <input type="button" value="Añadir al carrito" id="Pizarra" class="set" onclick="setCookie('Pizarra', 'Pizarra de Entrenador', 13.99)">
-            </div>
-        </div>
-
-        <div class="producto">
-            <div class="imagen">
-                <img data-retina="50" data-height="50" alt="Imagen del chapas en blanco de futbolchapas" src="../img/personalizadas.png" loading="lazy">
-            </div>
-            <div class="detalle">
-                <h3>Pack de Jugadores Leyenda</h3>
-                <p>
-                    <b>Precio:</b> 18,99 €
-                    <br>
-                    <b>Descripción:</b> Lleva a casa un conjunto de 10 chapas de jugadores leyenda que marcaron la historia del fútbol. Desde Pelé hasta Maradona, esta colección es imprescindible para los aficionados.
-                </p>
-                <input type="button" value="Añadir al carrito" id="PackJugadores" class="set" onclick="setCookie('Leyenda', 'Pack de Jugadores Leyenda', 18.99)">
-            </div>
-        </div>
-    </div>
 
 <footer id="MapaWeb">
     <div class="pie" id="MapaWebFoto">

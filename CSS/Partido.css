@@ -1,0 +1,27 @@
+table{
+    margin: 1%;
+    width: 98%;
+    border: none;
+    text-align: center;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#showP{
+    margin-left: 1%;
+}
+
+.team-logo {
+    height: 30px;
+    width: auto;
+}

@@ -1,0 +1,78 @@
+#Contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Contact{
+    flex: 1 1 300px;
+}
+
+.infoCont {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#Contacto h1 {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#FormularioContacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+#FormularioContacto label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#FormularioContacto input, FormularioContacto textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#FormularioContacto input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#FormularioContacto input[type="submit"]:hover {
+    background-color: #02ab0e;
+}
+
+/*Información de contacto*/
+#Info_Contacto ul {
+    list-style-type: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (width < 700px) {
+    #Contacto {
+        flex-direction: column;
+    }
+
+    #FormularioContacto, #Info_Contacto {
+        max-width: 100%;
+    }
+}

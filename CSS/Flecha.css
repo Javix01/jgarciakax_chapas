@@ -1,0 +1,18 @@
+#btnSubirArriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    background-color: #01860d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnSubirArriba:hover {
+    background-color: #00ff0e;
+}
